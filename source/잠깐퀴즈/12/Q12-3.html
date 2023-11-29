@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<img onmouseenter="bigImage(this)" onmouseleave="smallImage(this)" 
+    src="apple.png" width="64" height="64">
+<script>
+    function bigImage(x) {
+        x.style.width = "128px";
+        x.style.height = "128px";
+    }
+    function smallImage(x) {
+        x.style.width = "64px";
+        x.style.height = "64px";
+    }    
+</script>
+</body>
+</html>

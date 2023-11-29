@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<h3>구구단 표</h3>
+<p id="show"></p>
+<body>
+<script>
+    let result;
+    let text = "";   
+
+    text += "<table border='1'>"; 
+    for (let y=1; y<=9; y++) {
+        text += "<tr>"; 
+        for (let x=2; x<=9; x++) {
+            result = x*y;
+            text += "<td>" + x + "x" + y + "=" + result + "</td>";
+        }
+        text += "</tr>";
+    }
+    text += "</table>"; 
+
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+
+<input type="text" id="content" onkeyup="makeUpper()">
+<p id="show">영문자를 입력하면 대문자로 변경됩니다!</p>
+
+<script>
+    function makeUpper() {
+        let x = document.getElementById("content");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+</body>
+</html>

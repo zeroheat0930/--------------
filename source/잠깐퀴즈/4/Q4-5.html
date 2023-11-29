@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+/* 
+퀴즈 정답 : 익명 함수에서는 호이스팅이 일어나지 않기 때문에 익명 함수를 호출하기 전에 
+           익명 함수를 정의하여야 한다. 따라서 아래 프로그램에서는 익명 함수 호출를 
+           호출한 다음 익명 함수가 정의되기 때문에 오류가 발생하는 것이다.
+*/
+    let x;
+    x = add(10, 20);
+    document.write(x);
+    
+    const add = function(a, b) {
+        return a+b;
+    }
+</script>
+</body>
+</html>

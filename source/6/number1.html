@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let a = 235.27;     // 부동 소수점(floating-point)
+    let b = -12;        // 정수(integer)
+    let c = 253e8;      // 양의 지수(positive exponential)
+    let d = 253e-8;     // 음의 지수(nagative exponential)
+
+    let text = "";
+    text += a + "<br>";
+    text += b + "<br>";
+    text += c + "<br>";
+    text += d;
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

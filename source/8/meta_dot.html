@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let str1 = "A cat gets haircut. c3t c_t.";
+    let pattern = /c.t/g;
+    let result = str1.match(pattern);
+
+    document.getElementById("show").innerHTML = result;   
+</script>
+</body>
+</html>

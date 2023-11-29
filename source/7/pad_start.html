@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let str1 = "268";
+    let str2 = str1.padStart(5, "0");
+    let str3 = str1.padStart(6, "#");
+
+    text = ""; 
+    text += str2 + "<br>";
+    text += str3;    
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

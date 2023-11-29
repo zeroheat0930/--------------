@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<form name="form1">  
+    아이디 : <input type="text" name="id"><br>
+    비밀번호 : <input type="password" name="pass"><br>
+</form>  
+<button onclick="setInfo()">버튼</button>
+<p id="show"></p>  
+<script>  
+    function setInfo(){ 
+        let text = "";
+        text += "- 아이디 : " + document.form1.id.value + "<br>";
+        text += "- 비밀번호 : " +  document.form1.pass.value;
+        document.getElementById("show").innerHTML = text;
+    }  
+</script>  
+</body>
+</html> 

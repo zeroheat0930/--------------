@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h3>회원 정보</h3>
+<p id="show"></p>
+<script>
+    const member = new Map();
+    member.set("name", "안지영");
+    member.set("age", 27);
+    member.set("tel", "010-5572-7768");
+
+    let text = "";
+    text += "<table border='1'>";
+    text += "<tr><th>이름</th><th>나이</th><th>전화번호</th></tr>";
+    member.forEach(function(value) {
+        text += "<td>" + value + "</td>";
+    })    
+    text += "</tr>";
+    text += "</table>";
+
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

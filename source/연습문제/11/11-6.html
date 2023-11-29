@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>  
+<body>
+<table id="table1" style="border:1px solid black">
+    <tr>
+        <td>10</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>40</td>
+    </tr>
+</table>
+<p>
+    <button onclick="changePadding()">확인</button>
+</p>
+<script>
+    function changePadding() {      
+        const elem = document.getElementById("table1");
+        elem.style.padding = "20px";
+    }
+</script>
+</body>
+</html> 

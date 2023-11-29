@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const obj1 = {
+      id : "kdhong",
+      name : "홍길동",
+      hobby: {
+        hobby1: "게임",
+        hobby2: "탁구",
+        hobby3: "기타"
+      }
+    };
+
+    let text = "";
+    text += obj1.hobby.hobby1 + "<br>";
+    text += obj1.hobby.hobby2 + "<br>";
+    text += obj1.hobby.hobby3;    
+    // text += obj1["hobby"]["hobby1"] + "<br>";
+    // text += obj1["hobby"]["hobby2"] + "<br>";
+    // text += obj1["hobby"]["hobby3"];
+
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    function Person(name, age, tel, email) {
+        this.name = name;
+        this.age = age;
+        this.tel = tel;
+        this.email = email;
+    }
+
+    const person1 = new Person("안지영", 20, "010-3663-5664", "ahn@korea.com");
+    const person2 = new Person("홍지수", 30, "010-5678-0785", "hong@korea.com");
+    const person3 = new Person("김수경", 40, "010-4787-4348", "kim@korea.com");
+
+    text = "";
+    text += person1.name + "<br>";
+    text += person2.age + "<br>";
+    text += person3.tel;
+    document.write(text);
+</script>
+</body>
+</html> 

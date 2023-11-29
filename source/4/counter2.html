@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<button onclick="incCounter()"> + </button>    
+<p id="show">0</p>
+
+<script>
+    const incCounter = function () {
+        let counter = 0;    // counter: 지역 변수
+        counter += 1;
+        document.getElementById("show").innerHTML = counter;        
+    } 
+</script>
+</body>
+</html>

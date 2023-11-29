@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>  
+<body>
+<table id="table1" style="border:1px solid black">
+    <tr>
+        <td>10</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>40</td>
+    </tr>
+</table>
+<p>
+    <button onclick="changeBorder()">확인</button>
+</p>
+<script>
+    function changeBorder() {      
+        const elem = document.getElementById("table1");
+        elem.style.border = "solid 5px green";
+    }
+</script>
+</body>
+</html> 

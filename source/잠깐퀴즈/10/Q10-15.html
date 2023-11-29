@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    const book = new Map();
+
+    book.set("title", "밤과 꿈");  // 새로운 요소 설정
+    book.set("author", "김수영");  // 새로운 요소 설정
+    document.write("제목: " + book.get("title") + "<br>");
+
+    book.delete("publish");  // 요소 삭제
+    document.write(book.get("publish"));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let str1 = "We are the world.";
+    
+    let pattern = /are/g;
+    let result1 = pattern.exec(str1);
+    let result2 = /is/g.exec(str1);
+    
+    let text="";
+    text += result1 + "<br>";
+    text += result2;
+    document.getElementById("show").innerHTML = text;     
+</script>
+</body>
+</html>

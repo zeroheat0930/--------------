@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let a = Math.log(2.8);   // 1.0296194171811581
+    let b = Math.log(1);     // 0
+    let c = Math.log("a");    // NaN
+    let d = Math.log(-3);      // NaN
+    
+    text = "";
+    text += a + "<br>";
+    text += b + "<br>";
+    text += c + "<br>";
+    text += d;   
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

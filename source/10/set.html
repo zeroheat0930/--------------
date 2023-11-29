@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const set1 = new Set([2, 3, 5, 5, 7, 7 ]);
+
+    let text = "";
+    for(let value of set1) {
+        text += value + "<br>";
+    }
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

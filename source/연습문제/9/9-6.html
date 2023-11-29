@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const numbers = [10, 20, 30, 40, 50];
+
+    let text = "";
+    numbers.map(func)
+    function func(number) {
+        let num16 = number.toString(16);
+        text += "0x" + num16 + "<br>"; 
+    }
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

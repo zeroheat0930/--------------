@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h3>진수 변환표</h3>
+<p id="show"></p>
+<script> 
+    let text="";
+    text += "<table border='1'>";
+    text += "<tr><th>10진수</th><th>16진수</th><th>2진수</th></tr>";
+    for (let x=100; x<=150; x+=10) {
+        text += "<tr><td>" + x + "</td>";
+        text += "<td>" + x.toString(16) + "</td>";
+        text += "<td>" + x.toString(2) + "</td></tr>";
+    }
+    text += "</table>";
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

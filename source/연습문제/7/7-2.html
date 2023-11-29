@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script> 
+    let tel = "010-1234-5678";
+    let email = "hong@korea.com";
+
+    let arr1 = tel.split("-");
+    let text="";
+    text += arr1[0] + ", ";
+    text += arr1[1] + ", ";
+    text += arr1[2] + ", ";
+    
+    let arr2 = email.split("@");
+    text += arr2[0] + ", ";  
+    text += arr2[1];  
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

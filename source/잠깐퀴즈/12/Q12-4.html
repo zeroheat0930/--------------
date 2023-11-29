@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+아이디: <input type="text" onfocus="focusFunc(this)" onblur="blurFunc(this) ">
+<script>
+    function focusFunc(x) {
+        x.style.backgroundColor = "pink";
+    }
+    function blurFunc(x) {
+        x.value = x.value.toUpperCase();
+    }    
+</script>
+</body>
+</html>

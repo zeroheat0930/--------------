@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let a = Math.sqrt(25);   // 5
+    let b = Math.sqrt(1);    // 1
+    let c = Math.sqrt(2);    // 1.4142135623730951
+    let d = Math.sqrt(-9);   // NaN
+    
+    text = "";
+    text += a + "<br>";
+    text += b + "<br>";
+    text += c + "<br>";
+    text += d;   
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

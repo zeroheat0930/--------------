@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const member = {
+      id : "kdhong",
+      name : "홍길동",
+      age : 30
+    };
+    
+    member.email = "kdhong@korea.com";
+
+    let text = "";
+    for (x in member) {
+      text += "키: " + x + ", 값: " + member[x] + "<br>";
+    }
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

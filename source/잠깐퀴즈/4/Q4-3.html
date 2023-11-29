@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    function inch2cm(x) {
+        let result = x * 2.54;
+        return result;
+    }
+
+    let inch, cm;
+    let text = "";
+    text += "<table border='1'>";
+    text += "<tr><td>인치</td><td>센티미터</td></tr>";
+    for (let inch=1; inch<=10; inch++) {   
+        cm = inch2cm(inch);     
+        text += "<tr><td>" + inch + "</td><td>" + cm + "</td></tr>";
+    }
+    text += "</table>";
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

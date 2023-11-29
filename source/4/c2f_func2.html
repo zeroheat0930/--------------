@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+        
+<script>
+    function c2f(a) {
+        let b = (a * 1.8) +32;   // a: 섭씨, b: 화씨
+        return b;
+    }
+
+    let f;   // f: 화씨
+    let text = "";
+
+    text += "<table border='1'>";
+    text += "<tr><td>섭씨</td><td>화씨</td></tr>";
+    for (let c=-10; c<=40; c+=10 ) {   // c: 섭씨
+        
+        f = c2f(c);     
+        text += "<tr><td>" + c + "</td><td>" + f + "</td></tr>";
+    }
+    text += "</table>";
+
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

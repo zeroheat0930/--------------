@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let a = 10;         // 숫자
+    let b = "lion";     // 문자열
+    let c = "2";        // 문자열
+
+    let result1 = a/b;    // NaN
+    let result2 = a/c;    // 5  
+
+    let text = "";
+    text += result1 + "<br>";
+    text += result2 + "<br>";
+    text += isNaN(result1) + "<br>";
+    text += isNaN(result2);    
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

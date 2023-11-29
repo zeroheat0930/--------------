@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+이름: <input type="text" id="name">
+<script>
+    const x = document.getElementById("name");
+    x.onfocus = function() { changeBgcolor1(); };
+    x.onblur = function() { changeBgcolor2(); };
+
+    function changeBgcolor1() {
+      x.style.backgroundColor = "yellow";
+    }
+    function changeBgcolor2() {
+      x.style.backgroundColor = "gray";
+    }    
+</script>
+</body>
+</html>

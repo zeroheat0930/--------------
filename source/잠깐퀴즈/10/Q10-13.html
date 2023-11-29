@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    const person = new Map([
+        ["name", "홍길동"],
+        ["age", 25],
+        ["tel", "010-1234-5678"]
+    ]);
+
+    for (const [key, value] of person)
+        document.write(key + ": " + value + "<br>");
+</script>
+</body>
+</html>

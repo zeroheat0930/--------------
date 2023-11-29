@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>  
+<body>
+<form name="form1">
+    이름 : <input type="text" name="name" value="홍길동"><br>
+    전화번호 : <input type="text" name="tel" value="010-1234-5678"><br>
+    주소 : <input type="text" name="address" value="서울"><br>
+</form> 
+<button onclick="getInputValue()">확인</button>
+<p id="show"></p>
+<script>
+    function getInputValue() {      
+        const x = document.forms["form1"];
+        let text = "";
+        for (let i=0; i<x.length; i++)
+            text += x.elements[i].value + "<br>";
+            
+        document.getElementById("show").innerHTML = text;
+    }
+</script>
+</body>
+</html> 

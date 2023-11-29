@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let str1 = "고래 싸움에 새우 등 터진다.";
+    
+    let text = "";
+    text += str1.substr(5, 3) + "<br>";    
+    text += str1.substr(7) + "<br>";    
+    text += str1.substr(-3);    
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

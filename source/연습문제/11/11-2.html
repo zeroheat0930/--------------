@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>  
+<body>
+<form name="form1">
+    사자: <input name="x" type="radio" value="1">
+    호랑이: <input name="x" type="radio" value="2">
+    곰: <input name="x" type="radio" value="3">
+    사슴: <input name="x" type="radio" value="4">
+    토끼: <input name="x" type="radio" value="4">
+</form> 
+<button onclick="countRadio()">확인</button>
+<p id="show"></p>
+<script>
+    function countRadio() {     
+        const x = document.getElementsByTagName("input");
+        //const x = document.querySelectorAll("input");
+        document.getElementById("show").innerHTML = x.length;
+    }
+</script> 
+</body>
+</html> 

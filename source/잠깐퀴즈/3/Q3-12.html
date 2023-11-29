@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<script>
+    const score = {kor:85, eng:90, math:95};
+    let sum = 0;
+    let avg;
+
+    for (x in score)
+        sum += score[x];
+    
+    avg = sum/3;
+    console.log("합계:" + sum);
+    console.log("평균:" + avg);
+</script>
+</body>
+</html> 

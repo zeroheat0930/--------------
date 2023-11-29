@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<input id="input1" placeholder="키를 입력하세요.">
+<script>
+    const input1 = document.getElementById("input1");
+    input1.addEventListener("keydown", changeBg);
+    function changeBg() {
+        input1.style.backgroundColor = "yellow";   
+    }
+</script>
+</body>
+</html>

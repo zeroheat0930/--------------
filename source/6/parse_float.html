@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let a = "10";   
+    let b = "10.123";   
+    let c = "   10";  
+    let d = "apple";  
+
+    let text = "";
+    text += parseFloat(a) + "<br>";    
+    text += parseFloat(b) + "<br>";   
+    text += parseFloat(c) + "<br>";  
+    text += parseFloat(d);  
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

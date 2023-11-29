@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const scores = new Map([
+        ["kor", 85],
+        ["eng", 90],
+        ["math", 95]
+    ]);
+
+    let sum = 0;
+    let avg;
+    scores.forEach(function(value) {
+        sum += value;
+    })
+    avg = sum/scores.size;
+
+    let text = "";
+    text += "국어 : " + scores.get("kor") + "<br>";
+    text += "영어 : " + scores.get("eng") + "<br>";
+    text += "수학 : " + scores.get("math") + "<br>";
+    text += "- 합계 : " + sum + "<br>";
+    text += "- 평균 : " + avg;
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

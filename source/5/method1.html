@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const cat = {
+        name: "로키",
+        species: "랙돌",
+        color: "흰색",
+        age: 3,
+        intro: function() {
+                return "나의 이름은 " + this.name + "입니다.";
+        }
+    };
+
+    document.getElementById("show").innerHTML = cat.intro(); 
+</script>
+</body>
+</html>

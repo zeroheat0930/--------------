@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    let scores = "93 87 77 93 86";
+    let arr = scores.split(" ");
+
+    let sum = 0;
+    let avg;
+    for (let i=0; i<arr.length; i++)
+        sum += parseInt(arr[i]);
+
+    avg = sum/arr.length;
+    document.write("합계: " + sum + "<br>");
+    document.write("평균: " + avg);
+</script>
+</body>
+</html>

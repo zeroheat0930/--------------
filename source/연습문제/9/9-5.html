@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p id="show"></p>
+<script>
+    const colors = ["빨강", "노랑", "주황", "빨강", "파랑", "빨강"];
+    let text = "";
+
+    colors.forEach(func);
+    function func(color, index) {
+        if (color=="빨강")
+            text += index + "<br>"; 
+    }
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

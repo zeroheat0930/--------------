@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    function Person(name, age, tel, email) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Person.prototype.tel = "010-3474-3667";
+    const person1 = new Person("안지영", 20, "010-3663-5664");
+    text ="";
+    for(x in person1) {
+        text += person1[x] + "<br>";
+    }
+    document.write(text);
+</script>
+</body>
+</html> 

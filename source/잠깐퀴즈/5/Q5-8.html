@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    function Person(name, age, email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    Person.prototype.introduction = function() {
+        return "나의 이름은 " + this.name + "이고 나이는 " +  this.age + "살 입니다."
+    }
+    const person1 = new Person("안지영", 20, "ahn@korea.com");
+
+    document.write(person1.introduction());
+</script>
+</body>
+</html> 
